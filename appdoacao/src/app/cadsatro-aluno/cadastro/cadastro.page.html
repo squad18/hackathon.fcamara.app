@@ -8,7 +8,40 @@
     <ion-title>Cadastro de Aluno</ion-title>
   </ion-toolbar>
 </ion-header>
-  
+
 <ion-content>
+  <div id="hello">
+    <p>Olá!</p>
+    <p>Neste local você deve cadastrar seus dados, os dados do seu filho e os materiais que necessita.</p>
+  </div>
+
+  <form action="" id="dados">
+
+    <div id="dadosResponsavel">
+      <fieldset>
+        <p>Informações do Responsável:</p>
+        <ion-input placeholder="Nome completo"></ion-input>
+        <ion-input placeholder="E-mail"></ion-input>
+        <ion-input placeholder="Endereço completo"></ion-input>
+      </fieldset>
+    </div>
+
+    <div id="dadosAluno">
+      <fieldset>
+        <p>Informações do Aluno:</p>
+        <ion-input placeholder="Nome completo"></ion-input>
+        <ion-input placeholder="Escola em que o aluno está matriculado"></ion-input>
+        <ion-input placeholder="Endereço completo da escola"></ion-input>
+        <ion-input placeholder="RA escolar do aluno"></ion-input>
+        <ion-input placeholder="Endereço completo da escola"></ion-input>
+      </fieldset>
+    </div>
+
+    <div id="listaMateriais">
+      <p>Informe no campo abaixo os materiais que você gostaria de receber:</p>
+      <textarea name="" id="" cols="40" rows="10" placeholder="Borracha &#10;Caderno &#10;Livro de História &#10;Lapiseira"></textarea>
+      <ion-button>Enviar</ion-button>
+    </div>
+  </form>
 
 </ion-content>
