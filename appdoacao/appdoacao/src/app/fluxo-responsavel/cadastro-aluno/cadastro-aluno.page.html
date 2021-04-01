@@ -1,26 +1,26 @@
 <ion-content>
 
   <div id="head">
-    <div id="title">
       <ion-icon id="seta" name="arrow-back-outline"></ion-icon>
       <h1>Cadastro de Aluno</h1>
-    </div>
-    <p> Neste local você deve cadastrar seus dados, os dados do seu filho(a) e os materiais que ele(a) necessita.</p>
+    <p> Neste local você deve cadastrar seus dados, os dados do(a) aluno(a) e os materiais que necessita.</p>
   </div>
 
   <div id="dados-cadastro">
     <form action="" id="dados">
 
       <p class="info">Informações do Responsável:</p>
-      <ion-input class="data" placeholder="  Nome completo do responsável"></ion-input>
-      <ion-input class="data" placeholder="  E-mail"></ion-input>
-      <ion-input class="data" placeholder="  Endereço completo"></ion-input>
+      <ion-input class="data" placeholder=" Nome completo"> &nbsp;&nbsp;&nbsp;<ion-icon name="person-outline"> </ion-icon></ion-input>
+      <ion-input class="data" placeholder=" E-mail"> &nbsp;&nbsp;&nbsp; <ion-icon name="at-outline"></ion-icon></ion-input>
+      <ion-input class="data" placeholder=" Telefone"> &nbsp;&nbsp;&nbsp; <ion-icon name="call-outline"></ion-icon></ion-input>
 
       <p class="info">Informações do Aluno:</p>
-      <ion-input class="data" placeholder="  Nome completo do aluno"></ion-input>
-      <ion-input class="data" placeholder="  Escola em que o aluno está matriculado"></ion-input>
-      <ion-input class="data" placeholder="  Endereço completo da escola"></ion-input>
-      <ion-input class="data" placeholder="  RA escolar do aluno"></ion-input>
+      <ion-input class="data" placeholder=" Nome completo"> &nbsp;&nbsp;&nbsp; <ion-icon name="person-outline"></ion-icon> </ion-input>
+      <ion-input class="data" placeholder=" Cidade da escola - UF"> &nbsp;&nbsp;&nbsp; <ion-icon name="location-outline"></ion-icon></ion-input>
+      <ion-input class="data" placeholder=" Escola que está matriculado"> &nbsp;&nbsp;&nbsp; <ion-icon name="school-outline"></ion-icon></ion-input>
+      <ion-input class="data" placeholder=" Endereço da escola"> &nbsp;&nbsp;&nbsp; <ion-icon name="home-outline"></ion-icon></ion-input>
+      <ion-input class="data" placeholder=" RA do aluno"> &nbsp;&nbsp;&nbsp; <ion-icon name="id-card-outline"></ion-icon></ion-input>
+     
 
       <p class="info"> Informe no campo abaixo os materiais que você gostaria de receber: </p>
 
@@ -28,20 +28,17 @@
         placeholder="Preencha a lista conforme o exemplo: &#10;&#10;Borracha &#10;Livro de História &#10;Caderno &#10;Lapiseira">
       </ion-textarea>
 
+      <br>
       <div id="botao">
-        <ion-button fill="light" style="width: 50%;">Enviar</ion-button>
+        <button>Enviar</button>
       </div>
+      
     </form>
   </div>
-
-
-
 
 </ion-content>
 
 <!-- 
-- Fazer donwload dos ícones - colocar o ícone dentro do input
-- Descobrir pq a div não acompanha os dados cadastrais
-- Importar a fonte INTER no projeto 
-- Fazer um doc padrão com as minhas alterações
+  OBSERVAÇÕES:
+- Falta Importar a fonte INTER no projeto 
 -->
