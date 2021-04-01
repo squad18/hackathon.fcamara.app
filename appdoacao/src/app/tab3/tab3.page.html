@@ -13,18 +13,27 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-searchbar placeholder="Pesquisar"></ion-searchbar>
+  <ion-searchbar placeholder="Pesquisar" showCancelButton="focus" (ionInput)="filtrar($event)"></ion-searchbar>
 
-  <ion-card *ngFor="let aluno of listaAlunos">
+  <div *ngIf="listaAlunos; else carregando">
+    <ion-card *ngFor="let aluno of listaAlunos">
+      <ion-item>
+        <ion-label>{{aluno.nome}}</ion-label>
+        <ion-button fill="outline" slot="end">Doar</ion-button>
+      </ion-item>
+    
+      <ion-card-content>
+        <p><strong>RA Escolar:</strong> {{aluno.ra_escolar}}</p>
+        <p><strong>Materiais:</strong> {{aluno.material}}</p>
+        <p><strong>Endereço da escola:</strong> {{aluno.endereco_escola}}</p>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <ng-template #carregando>
     <ion-item>
-      <ion-label>{{aluno.nome}}</ion-label>
-      <ion-button fill="outline" slot="end">Doar</ion-button>
+      <p>Carregando...</p>
     </ion-item>
-  
-    <ion-card-content>
-      <p>RA Escolar: {{aluno.ra_escolar}}</p>
-      <p>Materiais: {{aluno.material}}</p>
-    </ion-card-content>
-  </ion-card>
-  
+  </ng-template>
+
 </ion-content>

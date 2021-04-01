@@ -34,4 +34,20 @@ export class Tab3Page implements OnInit {
       this.listaAlunos = result.data;
     })
   }
+
+  filtrar(ev: any) {
+    try {
+        let val = ev.target.value;
+        if (val && val.trim() != '' && val.length > 2) {
+            this.listaAlunos = this.listaAlunos.filter((item) => {
+                return (item.endereco_escola.toLowerCase().indexOf(val.toLowerCase()) > -1);
+            })
+        } else {
+            this.obterAlunos();
+        }
+    } catch (e) {
+      console.error("Ocorreu um erro: " + e);
+    }
+  }
+
 }
