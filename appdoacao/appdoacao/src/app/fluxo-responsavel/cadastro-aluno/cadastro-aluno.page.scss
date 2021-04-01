@@ -1,3 +1,4 @@
+
 #head {
     position: absolute;
     width: 100%;
@@ -5,6 +6,24 @@
     left: 0px;
     top: 0px;
     background: linear-gradient(164.77deg, #9b51e0 9.9%, #5084f0 54.97%), #5084f0;
+}
+
+#title {
+    display:inline;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+#seta {
+
+    font-size: 30px;
+    color: white;
+    top: 10%;
+    bottom: 20.83%;    
 }
 
 #card {
@@ -67,4 +86,5 @@ ion-input {
     border-color: rgb(170, 168, 168);
     border-style: solid;
     border-width: 0.5px;
+    padding: 10px;
 }
