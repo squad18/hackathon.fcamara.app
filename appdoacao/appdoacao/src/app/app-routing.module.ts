@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'painel-pais',
     loadChildren: () => import('./fluxo-responsavel/painel-pais/painel-pais.module').then( m => m.PainelPaisPageModule)
   },
+  {
+    path: 'info-doacao-pais',
+    loadChildren: () => import('./fluxo-responsavel/info-doacao-pais/info-doacao-pais.module').then( m => m.InfoDoacaoPaisPageModule)
+  },
 ];
 
 @NgModule({
