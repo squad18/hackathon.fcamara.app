@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Lista para doações
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  
+  <ion-searchbar placeholder="Pesquisar" showCancelButton="focus" (ionInput)="filtrar($event)"></ion-searchbar>
+
+  <div *ngIf="listaAlunos; else carregando">
+    <ion-card *ngFor="let aluno of listaAlunos">
+      <ion-item>
+        <ion-label>{{aluno.nome}}</ion-label>
+        <ion-button color="purple" fill="solid" slot="end">Doar</ion-button>
+      </ion-item>
+    
+      <ion-card-content>
+        <strong>RA Escolar: </strong>{{aluno.ra_escolar}}
+        <p></p>
+        <strong>Materiais: </strong>{{aluno.material}}
+        <p></p>
+        <strong>Endereço da escola: </strong>{{aluno.endereco_escola}}
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <ng-template #carregando>
+    <ion-item>
+      <p>Carregando...</p>
+    </ion-item>
+  </ng-template>
+
+</ion-content>

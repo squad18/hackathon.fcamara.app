@@ -13,15 +13,15 @@ const routes: Routes = [
   },
   {
     path: 'cadastro-aluno',
-    loadChildren: () => import('./fluxo-responsavel/cadastro-aluno/cadastro-aluno.module').then( m => m.CadastroAlunoPageModule)
+    loadChildren: () => import('./cadastro-aluno/cadastro-aluno.module').then( m => m.CadastroAlunoPageModule)
   },
   {
     path: 'painel-pais',
-    loadChildren: () => import('./fluxo-responsavel/painel-pais/painel-pais.module').then( m => m.PainelPaisPageModule)
+    loadChildren: () => import('./painel-pais/painel-pais.module').then( m => m.PainelPaisPageModule)
   },
   {
     path: 'info-doacao-pais',
-    loadChildren: () => import('./fluxo-responsavel/info-doacao-pais/info-doacao-pais.module').then( m => m.InfoDoacaoPaisPageModule)
+    loadChildren: () => import('./info-doacao-pais/info-doacao-pais.module').then( m => m.InfoDoacaoPaisPageModule)
   },
 ];
 
