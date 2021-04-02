@@ -26,7 +26,11 @@ const routes: Routes = [
   {
     path: 'lista-doacoes',
     loadChildren: () => import('./pages/lista-doacoes/lista-doacoes.module').then( m => m.ListaDoacoesPageModule)
+  },  {
+    path: 'doacao',
+    loadChildren: () => import('./pages/doacao/doacao.module').then( m => m.DoacaoPageModule)
   },
+
 
 ];
 

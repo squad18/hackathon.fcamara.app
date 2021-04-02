@@ -15,7 +15,7 @@
     <ion-card *ngFor="let aluno of listaAlunos">
       <ion-item>
         <ion-label>{{aluno.nome}}</ion-label>
-        <ion-button color="purple" fill="solid" slot="end">Doar</ion-button>
+        <ion-button color="purple" fill="solid" slot="end" (click)="doar(aluno)">Doar</ion-button>
       </ion-item>
     
       <ion-card-content>
