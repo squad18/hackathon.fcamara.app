@@ -1,7 +1,0 @@
-{
-  "name": "appdoacao",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}

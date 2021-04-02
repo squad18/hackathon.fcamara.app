@@ -83,7 +83,7 @@ AppComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<ion-app>\n  <ion-router-outlet></ion-router-outlet>\n</ion-app>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-app>\r\n  <ion-router-outlet></ion-router-outlet>\r\n</ion-app>\r\n");
 
 /***/ }),
 
@@ -102,8 +102,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser */ "jhN1");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "tyNb");
 /* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic/angular */ "TEn/");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app-routing.module */ "vY5A");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app.component */ "Sy1n");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app.component */ "Sy1n");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app-routing.module */ "vY5A");
 
 
 
@@ -115,11 +115,11 @@ let AppModule = class AppModule {
 };
 AppModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
-        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"]],
+        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]],
         entryComponents: [],
-        imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"], _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicModule"].forRoot(), _app_routing_module__WEBPACK_IMPORTED_MODULE_5__["AppRoutingModule"]],
+        imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"], _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicModule"].forRoot(), _app_routing_module__WEBPACK_IMPORTED_MODULE_6__["AppRoutingModule"]],
         providers: [{ provide: _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouteReuseStrategy"], useClass: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicRouteStrategy"] }],
-        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"]],
+        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]],
     })
 ], AppModule);
 
@@ -383,17 +383,30 @@ __webpack_require__.r(__webpack_exports__);
 
 const routes = [
     {
+        path: 'home',
+        loadChildren: () => __webpack_require__.e(/*! import() | pages-home-home-module */ "pages-home-home-module").then(__webpack_require__.bind(null, /*! ./pages/home/home.module */ "99Un")).then(m => m.HomePageModule)
+    },
+    {
         path: '',
-        loadChildren: () => __webpack_require__.e(/*! import() | tabs-tabs-module */ "tabs-tabs-module").then(__webpack_require__.bind(null, /*! ./tabs/tabs.module */ "hO9l")).then(m => m.TabsPageModule)
+        redirectTo: 'home',
+        pathMatch: 'full'
     },
     {
-        path: 'page1',
-        loadChildren: () => __webpack_require__.e(/*! import() | page1-page1-module */ "page1-page1-module").then(__webpack_require__.bind(null, /*! ./page1/page1.module */ "Tul/")).then(m => m.Page1PageModule)
+        path: 'cadastro-aluno',
+        loadChildren: () => __webpack_require__.e(/*! import() | pages-cadastro-aluno-cadastro-aluno-module */ "pages-cadastro-aluno-cadastro-aluno-module").then(__webpack_require__.bind(null, /*! ./pages/cadastro-aluno/cadastro-aluno.module */ "4P8L")).then(m => m.CadastroAlunoPageModule)
     },
     {
-        path: 'page1',
-        loadChildren: () => __webpack_require__.e(/*! import() | page1-page1-module */ "page1-page1-module").then(__webpack_require__.bind(null, /*! ./page1/page1.module */ "Tul/")).then(m => m.Page1PageModule)
-    }
+        path: 'painel-pais',
+        loadChildren: () => __webpack_require__.e(/*! import() | pages-painel-pais-painel-pais-module */ "pages-painel-pais-painel-pais-module").then(__webpack_require__.bind(null, /*! ./pages/painel-pais/painel-pais.module */ "5Ijs")).then(m => m.PainelPaisPageModule)
+    },
+    {
+        path: 'info-doacao-pais',
+        loadChildren: () => __webpack_require__.e(/*! import() | pages-info-doacao-pais-info-doacao-pais-module */ "pages-info-doacao-pais-info-doacao-pais-module").then(__webpack_require__.bind(null, /*! ./pages/info-doacao-pais/info-doacao-pais.module */ "PkNo")).then(m => m.InfoDoacaoPaisPageModule)
+    },
+    {
+        path: 'lista-doacoes',
+        loadChildren: () => __webpack_require__.e(/*! import() | pages-lista-doacoes-lista-doacoes-module */ "pages-lista-doacoes-lista-doacoes-module").then(__webpack_require__.bind(null, /*! ./pages/lista-doacoes/lista-doacoes.module */ "76gC")).then(m => m.ListaDoacoesPageModule)
+    },
 ];
 let AppRoutingModule = class AppRoutingModule {
 };

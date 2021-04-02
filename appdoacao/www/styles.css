@@ -1247,9 +1247,5 @@ sub {
 .ion-align-items-baseline {
   align-items: baseline !important;
 }
-@font-face {
-  font-family: "Inter";
-  src: "C:Repositorioshackathon.fcamara.app\appdoacaosrc\assets\fontsstaticInter-Variable.ttf";
-}
 
 /*# sourceMappingURL=styles.css.map*/
