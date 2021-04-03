@@ -1,0 +1,139 @@
+#head {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(164.77deg, #9b51e0 9.9%, #5084f0 54.97%), #5084f0;
+    padding: 13px;
+}
+
+ion-title {
+    color: rgba(251, 251, 251, 1);
+    font-size: 30px;
+}
+
+ion-button {
+    width: 88px;
+    height: 32px;
+    left: 250px;
+    top: 118px;
+
+    /* Purple 1 */
+
+    background: #9b51e0;
+    border-radius: 5px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    /* or 125% */
+
+    /* cinza claríssimo */
+
+    color: #fbfbfb;
+}
+
+#seta {
+    font-size: 25px;
+    color: rgba(251, 251, 251, 1);
+}
+
+
+p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+    color: #fbfbfb;
+}
+
+#dados-cadastro {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 150px;
+    background: #f2f2f2;
+    border-radius: 28px;
+    padding: 10px;
+
+}
+
+#listaMateriais {
+    background-color: rgb(255, 255, 255);
+}
+
+#botao {
+    text-align: center;
+}
+
+.info {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 15px;
+    text-align: left;
+    margin-left: 5%;
+
+}
+
+
+
+ion-input {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 98%;
+}
+
+.data {
+    padding: 5px;
+    margin: 5px;
+}
+
+#txtarea {
+    width: 328px;
+    height: 176px;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+}
+
+button {
+    width: 328px;
+    height: 40px;
+    background-color: #9b51e0;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 16px;
+    text-align: center;
+    color: #fbfbfb;
+}
+
+ion-title{ 
+    font-family:Inter !important;
+    font-size: 20px;
+}
+ion-card-content{ 
+    font-family:Inter !important;
+    font-size: 14px;
+}
+p{ 
+    font-family:Inter !important;
+    font-size: 16px;
+}
+ion-button{ 
+    font-family:Inter !important;
+    font-size: 12px;
+}
+ion-content ion-searchbar{ 
+    font-family:Inter !important;
+    font-size: 10px;
+}

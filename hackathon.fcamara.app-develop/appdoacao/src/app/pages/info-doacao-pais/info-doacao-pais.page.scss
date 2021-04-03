@@ -1,0 +1,154 @@
+#head {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(164.77deg, #9b51e0 9.9%, #5084f0 54.97%), #5084f0;
+    padding: 13px;
+}
+
+ion-title {
+    font-size: 30px;
+    color: rgba(251, 251, 251, 1);
+    margin: auto;
+}
+
+#seta {
+font-size: 25px;
+    bottom: 20.83%;
+    color: rgba(251, 251, 251, 1);
+}
+
+ion-item {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+    color: #fbfbfb;
+}
+
+#dados-aluno {
+    position: absolute;
+    width: 101%;
+    height: 100%;
+    top: 120px;
+    background: #f2f2f2;
+    border-radius: 28px;
+    padding: 20px;
+    text-align: center;
+}
+
+#dados {
+    width: 328px;
+    height: 62px;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: auto;
+    padding: 10px;
+}
+
+#materiais {
+    width: 328px;
+    height: 236px;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: auto;
+    padding: 10px;
+}
+
+#alerta {
+    width: 328px;
+    height: 80px;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: auto;
+    padding: 10px;
+}
+
+#botaoOk {
+    width: 160px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+#botaoCancela {
+    width: 157px;
+    height: 40px;
+    left: 186px;
+    top: 508px;
+    background: #62308f;
+    border-radius: 10px;
+    color: #fbfbfb;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+ion-title{ 
+    font-family:Inter !important;
+    font-size: 20px;
+}
+
+#ok {
+    width: auto;
+    height: 40px;
+    font-size: 16px;
+    line-height: 16px;
+
+    /* Purple 1 */
+
+    background: #9b51e0;
+    border-radius: 5px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    
+    /* or 125% */
+
+    /* cinza claríssimo */
+
+    color: #fbfbfb;
+}
+
+#cancel {
+    width: auto;
+    height: 40px;
+    font-size: 16px;
+    line-height: 16px;
+
+    /* Purple 1 */
+
+    background: #9b51e0;
+    border-radius: 5px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    
+    /* or 125% */
+
+    /* cinza claríssimo */
+
+    color: #fbfbfb;
+}
+
+ion-card-content{ 
+    font-family:Inter !important;
+    font-size: 14px;
+}
+p{ 
+    font-family:Inter !important;
+    font-size: 16px;
+}
+ion-button{ 
+    font-family:Inter !important;
+    font-size: 12px;
+}
+ion-content ion-searchbar{ 
+    font-family:Inter !important;
+    font-size: 10px;
+}
