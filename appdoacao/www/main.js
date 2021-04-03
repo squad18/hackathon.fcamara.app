@@ -384,7 +384,7 @@ __webpack_require__.r(__webpack_exports__);
 const routes = [
     {
         path: 'home',
-        loadChildren: () => __webpack_require__.e(/*! import() | pages-home-home-module */ "pages-home-home-module").then(__webpack_require__.bind(null, /*! ./pages/home/home.module */ "99Un")).then(m => m.HomePageModule)
+        loadChildren: () => Promise.all(/*! import() | pages-home-home-module */[__webpack_require__.e("default~pages-doacao-doacao-module~pages-home-home-module~pages-lista-doacoes-lista-doacoes-module"), __webpack_require__.e("pages-home-home-module")]).then(__webpack_require__.bind(null, /*! ./pages/home/home.module */ "99Un")).then(m => m.HomePageModule)
     },
     {
         path: '',
@@ -405,11 +405,11 @@ const routes = [
     },
     {
         path: 'lista-doacoes',
-        loadChildren: () => Promise.all(/*! import() | pages-lista-doacoes-lista-doacoes-module */[__webpack_require__.e("default~pages-doacao-doacao-module~pages-lista-doacoes-lista-doacoes-module"), __webpack_require__.e("pages-lista-doacoes-lista-doacoes-module")]).then(__webpack_require__.bind(null, /*! ./pages/lista-doacoes/lista-doacoes.module */ "76gC")).then(m => m.ListaDoacoesPageModule)
+        loadChildren: () => Promise.all(/*! import() | pages-lista-doacoes-lista-doacoes-module */[__webpack_require__.e("default~pages-doacao-doacao-module~pages-home-home-module~pages-lista-doacoes-lista-doacoes-module"), __webpack_require__.e("pages-lista-doacoes-lista-doacoes-module")]).then(__webpack_require__.bind(null, /*! ./pages/lista-doacoes/lista-doacoes.module */ "76gC")).then(m => m.ListaDoacoesPageModule)
     },
     {
         path: 'doacao',
-        loadChildren: () => Promise.all(/*! import() | pages-doacao-doacao-module */[__webpack_require__.e("default~pages-doacao-doacao-module~pages-lista-doacoes-lista-doacoes-module"), __webpack_require__.e("pages-doacao-doacao-module")]).then(__webpack_require__.bind(null, /*! ./pages/doacao/doacao.module */ "hfMz")).then(m => m.DoacaoPageModule)
+        loadChildren: () => Promise.all(/*! import() | pages-doacao-doacao-module */[__webpack_require__.e("default~pages-doacao-doacao-module~pages-home-home-module~pages-lista-doacoes-lista-doacoes-module"), __webpack_require__.e("pages-doacao-doacao-module")]).then(__webpack_require__.bind(null, /*! ./pages/doacao/doacao.module */ "hfMz")).then(m => m.DoacaoPageModule)
     },
 ];
 let AppRoutingModule = class AppRoutingModule {

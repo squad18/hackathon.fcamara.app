@@ -1286,7 +1286,13 @@ ion-content ion-searchbar {
   font-size: 30px;
   color: #fbfbfb;
   top: 10%;
-  bottom: 20.83%;
+}
+#menu-hamburguer {
+  position: absolute;
+  font-size: 30px;
+  color: #fbfbfb;
+  top: 25px;
+  right: 5%;
 }
 
 /*# sourceMappingURL=styles.css.map*/

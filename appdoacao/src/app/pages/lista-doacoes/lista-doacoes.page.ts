@@ -52,6 +52,10 @@ export class ListaDoacoesPage implements OnInit {
     }
   }
 
+  voltar() {
+    this.navCtrl.navigateRoot(['home']);
+  }
+
   doar(aluno: AlunoModel) {
     const navigationExtras: NavigationExtras = {
       queryParams: {

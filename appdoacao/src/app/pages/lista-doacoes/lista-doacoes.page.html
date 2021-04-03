@@ -1,6 +1,7 @@
 <ion-content [fullscreen]="true">
 
   <div id="head">
+    <ion-icon id="menu-hamburguer" name="menu-outline"></ion-icon>
     <ion-icon id="seta" name="arrow-back-outline" (click)="voltar()"></ion-icon>
     <h1>Lista para Doações</h1>
   </div>
@@ -9,12 +10,12 @@
 
     <div *ngIf="listaAlunos; else carregando">
 
-      <ion-searchbar placeholder="Pesquisar por Endereço" showCancelButton="focus" (ionInput)="filtrar($event)"></ion-searchbar>
+      <ion-searchbar placeholder="Pesquisar o nome da cidade" (ionInput)="filtrar($event)"></ion-searchbar>
   
       <ion-card *ngFor="let aluno of listaAlunos">
         <ion-item>
           <ion-label>{{aluno.nome}}</ion-label>
-          <ion-button color="purple" fill="solid" slot="end" (click)="doar(aluno)">Doar</ion-button>
+          <ion-button color="purple" fill="solid" slot="end" (click)="doar(aluno)">DOAR</ion-button>
         </ion-item>
       
         <ion-card-content>
@@ -23,6 +24,7 @@
           <p><strong>Endereço da escola: </strong>{{aluno.endereco_escola}}</p>
         </ion-card-content>
       </ion-card>
+
     </div>
   
     <ng-template #carregando>
