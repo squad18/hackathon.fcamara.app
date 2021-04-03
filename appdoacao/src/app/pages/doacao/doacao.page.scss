@@ -9,6 +9,7 @@
         text-align: center;
         color: rgba(251, 251, 251, 1);
         font-size: 30px;
+        margin-top: 10px !important;
     }
 
     p {
@@ -20,15 +21,7 @@
     }
 }
 
-#seta {
-    position: absolute;
-    font-size: 30px;
-    color: rgba(251, 251, 251, 1);
-    top: 10%;
-    bottom: 20.83%;
-}
-
-#dados-doacao {
+#body {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -36,64 +29,8 @@
     background: #f2f2f2;
     border-radius: 28px;
     padding: 10px;
-
 }
 
-#listaMateriais {
-    background-color: rgb(255, 255, 255);
-}
-
-#botao {
-    text-align: center;
-}
-
-.info {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #333333;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 15px;
-    text-align: left;
-    margin-left: 5%;
-
-}
-
-
-
-ion-input {
-    background: #ffffff;
-    border: 1px solid #e0e0e0;
-    box-sizing: border-box;
-    border-radius: 10px;
-    width: 98%;
-}
-
-.data {
-    padding: 5px;
-    margin: 5px;
-}
-
-#txtarea {
-    width: 328px;
-    height: 176px;
-    background: #ffffff;
-    border: 1px solid #e0e0e0;
-    box-sizing: border-box;
-    border-radius: 10px;
-    width: 90%;
-    margin: auto;
-}
-
-button {
-    width: 328px;
-    height: 40px;
-    background-color: #9b51e0;
-    border-radius: 10px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 16px;
-    text-align: center;
-    color: #fbfbfb;
+ion-content {
+    --ion-background-color:#f2f2f2;
 }

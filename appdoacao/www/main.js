@@ -405,7 +405,11 @@ const routes = [
     },
     {
         path: 'lista-doacoes',
-        loadChildren: () => __webpack_require__.e(/*! import() | pages-lista-doacoes-lista-doacoes-module */ "pages-lista-doacoes-lista-doacoes-module").then(__webpack_require__.bind(null, /*! ./pages/lista-doacoes/lista-doacoes.module */ "76gC")).then(m => m.ListaDoacoesPageModule)
+        loadChildren: () => Promise.all(/*! import() | pages-lista-doacoes-lista-doacoes-module */[__webpack_require__.e("default~pages-doacao-doacao-module~pages-lista-doacoes-lista-doacoes-module"), __webpack_require__.e("pages-lista-doacoes-lista-doacoes-module")]).then(__webpack_require__.bind(null, /*! ./pages/lista-doacoes/lista-doacoes.module */ "76gC")).then(m => m.ListaDoacoesPageModule)
+    },
+    {
+        path: 'doacao',
+        loadChildren: () => Promise.all(/*! import() | pages-doacao-doacao-module */[__webpack_require__.e("default~pages-doacao-doacao-module~pages-lista-doacoes-lista-doacoes-module"), __webpack_require__.e("pages-doacao-doacao-module")]).then(__webpack_require__.bind(null, /*! ./pages/doacao/doacao.module */ "hfMz")).then(m => m.DoacaoPageModule)
     },
 ];
 let AppRoutingModule = class AppRoutingModule {

@@ -5,5 +5,5 @@ export class AlunoModel {
     endereco_escola: string;
     nome: string;
     ra_escolar: number;
-    material: string;    
+    material: any;    
 }

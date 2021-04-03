@@ -24,3 +24,52 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./assets/fonts/Inter-VariableFont_slntwght.ttf');
+}
+
+ion-title{ 
+    font-family:Inter !important;
+    font-size: 20px;
+}
+
+ion-card-content{ 
+    font-family:Inter !important;
+    font-size: 14px;
+}
+
+ion-item{ 
+    font-family:Inter !important;
+    font-size: 16px;
+}
+
+ion-button{ 
+    font-family:Inter !important;
+    font-size: 14px;
+}
+
+ion-content ion-searchbar{ 
+    font-family:Inter !important;
+    font-size: 10px;
+}
+
+.loading {
+    padding: 10px;
+    margin-top: 50%;
+    text-align: center;
+    color: white;
+    font-family:Inter !important;
+    font-size: 14px;
+}
+
+#seta {
+    position: absolute;
+    font-size: 30px;
+    color: rgba(251, 251, 251, 1);
+    top: 10%;
+    bottom: 20.83%;
+}

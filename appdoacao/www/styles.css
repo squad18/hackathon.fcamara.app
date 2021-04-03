@@ -1247,5 +1247,46 @@ sub {
 .ion-align-items-baseline {
   align-items: baseline !important;
 }
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  src: url('Inter-VariableFont_slntwght.ttf');
+}
+ion-title {
+  font-family: Inter !important;
+  font-size: 20px;
+}
+ion-card-content {
+  font-family: Inter !important;
+  font-size: 14px;
+}
+ion-item {
+  font-family: Inter !important;
+  font-size: 16px;
+}
+ion-button {
+  font-family: Inter !important;
+  font-size: 14px;
+}
+ion-content ion-searchbar {
+  font-family: Inter !important;
+  font-size: 10px;
+}
+.loading {
+  padding: 10px;
+  margin-top: 50%;
+  text-align: center;
+  color: white;
+  font-family: Inter !important;
+  font-size: 14px;
+}
+#seta {
+  position: absolute;
+  font-size: 30px;
+  color: #fbfbfb;
+  top: 10%;
+  bottom: 20.83%;
+}
 
 /*# sourceMappingURL=styles.css.map*/

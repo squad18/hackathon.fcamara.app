@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AlunoModel } from '../../models/aluno.model';
+import { AlunoModel } from 'src/app/pages/models/aluno.model';
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Observable } from 'rxjs';
 import { take } from 'rxjs/operators';
