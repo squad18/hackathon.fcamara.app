@@ -4,7 +4,7 @@ import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Observable } from 'rxjs';
 import { take } from 'rxjs/operators';
 import { NavController } from '@ionic/angular';
-import { NavigationExtras } from '@angular/router';
+import { ActivatedRoute, NavigationExtras } from '@angular/router';
 
 @Component({
   selector: 'app-lista-doacoes',
@@ -16,14 +16,23 @@ export class ListaDoacoesPage implements OnInit {
 
   listaAlunos: AlunoModel[];
   headers: HttpHeaders;
+  tipoDoacao: string;
 
-  constructor(public navCtrl: NavController, private http: HttpClient) {
+  constructor(
+    public navCtrl: NavController,
+    private http: HttpClient,
+    private activatedRoute: ActivatedRoute) {
     this.headers = new HttpHeaders();
     this.headers = this.headers.append('Content-Type', 'application/json')
   }
 
   ngOnInit() {
     this.obterAlunos();
+    this.activatedRoute.queryParams.subscribe(params => {
+      if (params && params.special){
+        this.tipoDoacao = JSON.parse(params.special);
+      }
+    })
   }
 
   get(): Observable<string> {
@@ -59,7 +68,8 @@ export class ListaDoacoesPage implements OnInit {
   doar(aluno: AlunoModel) {
     const navigationExtras: NavigationExtras = {
       queryParams: {
-        special: JSON.stringify(aluno)
+        special: JSON.stringify(aluno),
+        tipoDoacao: JSON.stringify(this.tipoDoacao)
       }
     };
     this.navCtrl.navigateRoot(['doacao'], navigationExtras);

@@ -1,5 +1,9 @@
 <ion-content [fullscreen]="true">
 
+<!-- Após tornar o tipo de doação uma condição no código |ngIf="tipoDoacao == 'identificada/anonima"|,
+o botão voltar apresentou um bug, pois ainda não foi passado a ele tais parâmetros.
+Para não atrapalhar a produtividade, foi aplicado um quickfix que pode ser visto na página doacao.page.ts  -->
+
   <div id="head">
     <ion-icon id="menu-hamburguer" name="menu-outline"></ion-icon>
     <ion-icon id="seta" name="arrow-back-outline" (click)="voltar()"></ion-icon>
@@ -8,21 +12,32 @@
 
   <div id="body">
 
-    <div *ngIf="aluno && responsavel; else carregando">
+    <div *ngIf="aluno && responsavel && tipoDoacao.length > 0; else carregando">
 
-      <ion-card>
+      <ion-card *ngIf="tipoDoacao == 'identificada'">
         <ion-card-content>
           <p>Você se encontrará com:</p>
           <p><strong>{{responsavel.nome}}</strong>, responsável pelo aluno(a) <strong>{{aluno.nome}}</strong>.</p>
         </ion-card-content>
       </ion-card>
 
+      <ion-card *ngIf="tipoDoacao == 'anonima'">
+        <ion-card-content>
+          <p>Sua doação irá para: <strong>{{aluno.nome}}</strong>!</p>
+        </ion-card-content>
+      </ion-card>
+
       <ion-card>
         <ion-card-content>
           <ion-grid>
-            <ion-row>
+            <ion-row *ngIf="tipoDoacao == 'identificada'">
               <ion-col>
                 <p><strong>Telefone:</strong> {{responsavel.telefone}}</p>
+              </ion-col>
+            </ion-row>
+            <ion-row *ngIf="tipoDoacao == 'anonima'">
+              <ion-col>
+                <p>A doação anônima requer que o doador providencie o envio dos materiais por entrega:</p>
               </ion-col>
             </ion-row>
             <ion-row>
@@ -31,12 +46,15 @@
               </ion-col>
             </ion-row>
             <ion-row>
-              <ion-col>
+              <ion-col *ngIf="tipoDoacao == 'identificada'">
                 <p><strong>Ponto de encontro recomendado:</strong> {{aluno.endereco_escola}}</p>
               </ion-col>
-              <ion-col>
+              <ion-col *ngIf="tipoDoacao == 'identificada'">
                 <p><strong>Data:</strong> 10/10/2021</p>
                 <p><strong>Horário:</strong> Horário: 10h30</p>
+              </ion-col>
+              <ion-col *ngIf="tipoDoacao == 'anonima'">
+                <p><strong>Endereço para envio:</strong> {{aluno.endereco_escola}}</p>
               </ion-col>
             </ion-row>
           </ion-grid>
@@ -51,7 +69,7 @@
       </ion-card>
 
       <div class="ion-padding">
-        <ion-button expand="block" color="purple" fill="solid">Doar</ion-button>
+        <ion-button expand="block" color="purple" fill="solid" (click)="finalizarDoacao()">Doar</ion-button>
       </div>
 
     </div>
@@ -59,6 +77,12 @@
   </div>
 
   <ng-template #carregando>
+    <ion-card color="purple" class="loading">
+      <p>Carregando...</p>
+    </ion-card>
+  </ng-template>
+
+  <ng-template *ngIf="popup">
     <ion-card color="purple" class="loading">
       <p>Carregando...</p>
     </ion-card>

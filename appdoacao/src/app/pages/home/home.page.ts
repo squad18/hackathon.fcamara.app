@@ -42,4 +42,13 @@ export class HomePage {
     };
     this.navCtrl.navigateRoot(['doacao'], navigationExtras);
   }
+
+  navegarParaLista(parametro: string) {
+    const navigationExtras: NavigationExtras = {
+      queryParams: {
+        special: JSON.stringify(parametro)
+      }
+    };
+    this.navCtrl.navigateRoot(['lista-doacoes'], navigationExtras);
+  }
 }

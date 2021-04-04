@@ -3,7 +3,7 @@ Repositório do app mobile (front).
 
 Este projeto faz parte do hackathon da FCamara 1/2021 e diz respeito a um aplicativo web mobile, onde familias de baixa renda possam cadastrar seus filhos, alunos de escolas públicas, para receberem doações de materiais, e doadores, em anonimato ou não, possam adquirir os materiais necessários e doá-los a esses alunos. O projeto foi desenvolvido com o framework Ionic 5 utilizando em conjunto o framework Angular.
 
-## Instruções para instalar e rodar o app:
+## Instruções para instalar e rodar o app no computador:
 
 1. Faça o clone do projeto
 ```sh
@@ -23,9 +23,11 @@ ionic build
 ionic serve
 ```
 
-## Features (em desenvolvimento):
+4. A aplicação ionic deverá subir no localhost, porta 8100.
+Para melhor visualização no navegador, utilize o modo mobile.
 
-- Cadastro de pais e alunos;
-- Cadastro de materiais;
+## Features:
+
+- Acompanhamento de doações;
 - Cadastro de doadores;
-- Doação autenticada ou anônima;
+- Doação identificada ou anônima;
