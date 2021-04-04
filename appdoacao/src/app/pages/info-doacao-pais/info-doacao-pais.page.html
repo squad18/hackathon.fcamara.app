@@ -1,23 +1,47 @@
-<ion-content>
+<ion-content [fullscreen]="true">
 
   <div id="head">
-     <h1 style="text-align: left;"><ion-icon id="seta" name="arrow-back-outline"></ion-icon> Ricardo Rodrigues</h1>
+    <ion-icon id="menu-hamburguer" name="menu-outline"></ion-icon>
+    <ion-icon id="seta" name="arrow-back-outline" (click)="voltar()"></ion-icon>
+    <h1>Ricardo Rodrigues</h1>
   </div>
-
 
   <div id="dados-aluno">
 
-    <ion-card id="dados"> 
-      
+    <ion-card>
+      <ion-card-content>
+        <p><strong>Ricardo Rodrigues</strong> quer doar!</p>
+        <p><strong>Telefone:</strong> (00)000000000</p>
+      </ion-card-content>
     </ion-card>
-    <br>
-    <ion-card id="materiais"> 
-      
+
+    <ion-card>
+      <ion-card-content>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <p><strong>Lista de Materiais:</strong> Borracha (3), Caderno (2), Livro de História.</p>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <p><strong>Ponto de encontro recomendado:</strong> Rua das Oliveiras, 1234, São Paulo - SP</p>
+            </ion-col>
+            <ion-col>
+              <p><strong>Data:</strong> 10/10/2021</p>
+              <p><strong>Horário:</strong> Horário: 10h30</p>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
     </ion-card>
-    <br>
-    <ion-card id="alerta"> 
-      
+    <ion-card>
+      <ion-card-content>
+        <h2><strong>Alerta COVID-19!</strong></h2>
+        <p>Limpe e esterilize os materiais antes de enviar para evitar transmitir o COVID-19.</p>
+      </ion-card-content>
     </ion-card>
+    
     <br>
     <button id="botaoOk">Aceitar Doação</button> &nbsp; <button id="botaoCancela">Cancelar Doação</button>
   </div>

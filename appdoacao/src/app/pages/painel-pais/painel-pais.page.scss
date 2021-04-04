@@ -4,19 +4,21 @@
     height: 250px;
     background: linear-gradient(164.77deg, #9b51e0 9.9%, #5084f0 54.97%), #5084f0;
     padding: 13px;
-}
 
-h1 {
-    text-align: center;
-    color: rgba(251, 251, 251, 1);
-    font-size: 30px;
-}
+    h1 {
+        text-align: center;
+        color: rgba(251, 251, 251, 1);
+        font-size: 30px;
+        margin-top: 10px !important;
+    }
 
-#seta {
-    font-size: 30px;
-    color: rgba(251, 251, 251, 1);
-    top: 10%;
-    bottom: 20.83%;
+    p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 15px;
+        color: #fbfbfb;
+    }
 }
 
 #doacoes {
@@ -67,17 +69,11 @@ ion-card-subtitle {
     color: #828282;
 }
 
-button {
+ion-button {
     width: 88px;
     height: 32px;
-    left: 250px;
-    top: 118px;
-
-    /* Purple 1 */
-
-    background: #9b51e0;
     border-radius: 5px;
-    font-family: Inter;
+    font-family: Inter !important;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -87,4 +83,8 @@ button {
     /* cinza claríssimo */
 
     color: #fbfbfb;
+}
+
+.container {
+    display: inline-block;
 }

@@ -4,28 +4,21 @@
     height: 250px;
     background: linear-gradient(164.77deg, #9b51e0 9.9%, #5084f0 54.97%), #5084f0;
     padding: 13px;
-}
 
-h1 {
-    text-align: center;
-    font-size: 30px;
-    color: rgba(251, 251, 251, 1);
-    margin: auto;
-}
+    h1 {
+        text-align: center;
+        color: rgba(251, 251, 251, 1);
+        font-size: 30px;
+        margin-top: 10px !important;
+    }
 
-#seta {
-    width: 50px;
-    height: 50px;
-    bottom: 20.83%;
-    color: rgba(251, 251, 251, 1);
-}
-
-p {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 15px;
-    color: #fbfbfb;
+    p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 15px;
+        color: #fbfbfb;
+    }
 }
 
 #dados-aluno {
@@ -35,40 +28,7 @@ p {
     top: 120px;
     background: #f2f2f2;
     border-radius: 28px;
-    padding: 20px;
     text-align: center;
-}
-
-#dados {
-    width: 328px;
-    height: 62px;
-    background: #ffffff;
-    border: 1px solid #e0e0e0;
-    box-sizing: border-box;
-    border-radius: 5px;
-    margin: auto;
-    padding: 10px;
-}
-
-#materiais {
-    width: 328px;
-    height: 236px;
-    background: #ffffff;
-    border: 1px solid #e0e0e0;
-    box-sizing: border-box;
-    border-radius: 5px;
-    margin: auto;
-    padding: 10px;
-}
-
-#alerta {
-    width: 328px;
-    height: 80px;
-    background: #ffffff;
-    border: 1px solid #e0e0e0;
-    box-sizing: border-box;
-    border-radius: 5px;
-    margin: auto;
     padding: 10px;
 }
 
@@ -94,4 +54,16 @@ p {
     color: #fbfbfb;
     font-size: 16px;
     line-height: 16px;
+}
+
+ion-card {
+    color: rgba(51, 51, 51, 1);
+    text-align: left;
+    background: rgba(255, 255, 255, 1);
+    font-size: 14px;
+
+}
+
+ion-content {
+    --ion-background-color: #f2f2f2;
 }
