@@ -1,10 +1,10 @@
-<ion-content>
+<ion-content [fullscreen]="true">
 
   <div id="head">
-    <ion-icon id="seta" name="arrow-back-outline"></ion-icon>
-    <h1>Cadastro de Aluno</h1>
-    <p> Neste local você deve cadastrar seus dados, os dados do(a) aluno(a) e os materiais que necessita.</p>
+    <ion-icon id="seta" name="arrow-back-outline" (click)="voltar()"></ion-icon>
+    <h1>Cadastro do(a) aluno(a)</h1>
   </div>
+
 
   <div id="dados-cadastro">
     <form action="" id="dados">
@@ -37,22 +37,16 @@
 
       <p class="info"> Abaixo, escreva os materiais que você precisa receber e a quantidade: </p>
       <ion-textarea id="txtarea" cols="40" rows="15"
-        placeholder="Preencha a lista conforme o exemplo: &#10;&#10;Borracha &#10;Livro de História &#10;Caderno &#10;Lapiseira">
+        placeholder="Preencha a lista conforme o exemplo: &#10;&#10;Borracha x2 &#10;Livro de História x1 &#10;Caderno x3 &#10;Lapiseira x1">
       </ion-textarea>
 
       <br>
-      <div id="botao">
-        <button>Enviar</button>
+      <div id="botao" style="text-align: center;">
+        <ion-button color="purple">Enviar</ion-button>
       </div>
 
     </form>
+    <br>
   </div>
 
 </ion-content>
-
-<!-- 
-  OBSERVAÇÕES:
-- Falta Importar a fonte INTER no projeto 
-- Falta ajustar o HEAD
-- Falta arrumar o problema de altura com a "div#dados-cadastrais"
--->
