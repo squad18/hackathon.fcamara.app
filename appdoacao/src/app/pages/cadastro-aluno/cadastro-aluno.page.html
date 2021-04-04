@@ -9,6 +9,8 @@
   <div id="dados-cadastro">
     <form action="" id="dados">
 
+
+
       <p class="info">Informações do Responsável:</p>
       <ion-input class="data" placeholder=" Nome completo"> &nbsp;&nbsp;&nbsp;<ion-icon name="person-outline">
         </ion-icon>
@@ -36,17 +38,22 @@
       </ion-input>
 
       <p class="info"> Abaixo, escreva os materiais que você precisa receber e a quantidade: </p>
-      <ion-textarea id="txtarea" cols="40" rows="15"
+      <ion-textarea id="txtarea" cols="10" rows="15"
         placeholder="Preencha a lista conforme o exemplo: &#10;&#10;Borracha x2 &#10;Livro de História x1 &#10;Caderno x3 &#10;Lapiseira x1">
       </ion-textarea>
-
-      <br>
-      <div id="botao" style="text-align: center;">
-        <ion-button color="purple">Enviar</ion-button>
-      </div>
-
     </form>
+
     <br>
+
+    <div>
+      <ion-button expand="block" color="purple" fill="solid" (click)="cadastrarAluno()">Enviar</ion-button>
+    </div>
+
+    <br>
+
   </div>
+
+
+
 
 </ion-content>

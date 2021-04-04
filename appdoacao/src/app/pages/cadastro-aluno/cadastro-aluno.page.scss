@@ -34,6 +34,7 @@ p {
     position: absolute;
     top: 100px;
     width: 100%;
+    height: auto;
     background: #f2f2f2;
     border-radius: 28px;
     padding: 5px;
@@ -69,13 +70,10 @@ ion-input {
 }
 
 #txtarea {
-    width: 328px;
-    height: 176px;
     background: #ffffff;
     border: 1px solid #e0e0e0;
     box-sizing: border-box;
     border-radius: 10px;
-    width: 90%;
     margin: auto;
 }
 
@@ -84,4 +82,5 @@ ion-button {
     height: 40px;
     border-radius: 8px;
     color: #fbfbfb;
+    margin: auto;
 }
