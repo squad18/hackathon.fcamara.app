@@ -10,17 +10,17 @@ Este projeto faz parte do hackathon da FCamara 1/2021 e diz respeito a um aplica
 1. Baixe o Node Js
 https://nodejs.org/pt-br/download/current/
 
-1. Faça o clone do projeto
+2. Faça o clone do projeto
 ```sh
 git clone https://github.com/squad18/hackathon.fcamara.app.git
 ```
 
-1. Acesse a pasta do projeto através do Terminal
+3. Acesse a pasta do projeto através do Terminal
 ```sh
 cd appdoacao/
 ```
 
-1. Execute os comandos abaixo na seguinte ordem:
+4. Execute os comandos abaixo na seguinte ordem:
 
 ```sh
 npm install
@@ -28,7 +28,7 @@ ionic build
 ionic serve
 ```
 
-1. A aplicação ionic deverá subir no localhost, porta 8100.
+5. A aplicação ionic deverá subir no localhost, porta 8100.
 Para melhor visualização no navegador, utilize o modo mobile.
 
 ## Features:
