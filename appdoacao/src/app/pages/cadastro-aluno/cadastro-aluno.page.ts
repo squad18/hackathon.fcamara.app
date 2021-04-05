@@ -1,3 +1,4 @@
+import { ApiService } from './../../services/api.service';
 import { AlertController, NavController } from '@ionic/angular';
 import { Component, OnInit } from '@angular/core';
 
@@ -9,7 +10,10 @@ import { Component, OnInit } from '@angular/core';
 export class CadastroAlunoPage implements OnInit {
 
 
-  constructor(private navCtrl : NavController, public alertCtrl: AlertController) { }
+  constructor(private navCtrl: NavController, public alertCtrl: AlertController, private apiService: ApiService) {
+    //this.readData();
+    this.createData();
+  }
 
   ngOnInit() {
   }
@@ -26,20 +30,39 @@ export class CadastroAlunoPage implements OnInit {
       message: 'Acompanhe suas doações recebidas.',
       buttons: [
         {
-            text: 'OK',
-            handler: () => {
-                alert.dismiss();
-                return false;
-            }
+          text: 'OK',
+          handler: () => {
+            alert.dismiss();
+            return false;
+          }
         }
-    ]
-  });
+      ]
+    });
 
-  await alert.present();
-  await alert.onDidDismiss().then(() => {
-    this.navCtrl.navigateRoot(['home']);
-  });
-}
+    await alert.present();
+    await alert.onDidDismiss().then(() => {
+      this.navCtrl.navigateRoot(['home']);
+    });
+  }
 
+  readData() {
+    this.apiService.readData().subscribe(data => {
+      console.log(data);
+    });
+  }
+
+  createData() {
+    const data: any = {
+      "email": "rafaelfrias@gmail.com",
+      "endereco": "Rua Joaquim de Santana 309",
+      "id": 2,
+      "nome": "Rafael Frias",
+      "telefone": "13997762148"
+    };
+
+    this.apiService.createData(data).subscribe(data => {
+      console.log(data);
+    });
+  }
 
 }
